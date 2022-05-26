@@ -1,0 +1,62 @@
+
+div {
+
+    .prod_img{
+        height:32rem;
+    }
+    }
+    
+    .contenedor {
+        position: relative;
+    }
+    
+    .contenedor{
+    
+        h2 {
+            position: absolute;
+        }
+    }   
+    
+    .contenedor {
+        p {
+            position: absolute;
+        }
+    }
+    
+    .cardcolor {
+        background: linear-gradient(#e66465, #9198e5); 
+    }
+    
+    
+    .cardAN{
+    
+        &:hover { 
+            transform: translate(0px, -20px);
+            transition: .3s ease all; 
+        }
+    }
+    
+    .card-title{
+    
+        &:hover {
+            color: $color-card-title;
+        }
+    }
+    
+    
+    .aa{
+        animation-name: aa;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes aa{
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    
