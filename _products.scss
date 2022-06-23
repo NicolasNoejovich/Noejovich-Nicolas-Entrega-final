@@ -3,23 +3,29 @@ div {
 
     .prod_img{
         height:32rem;
-    }
+        }
     }
     
     .contenedor {
         position: relative;
     }
     
+
+    @mixin contenedor ($position) {
+        position: absolute;        
+    }
+
     .contenedor{
     
         h2 {
-            position: absolute;
+            @include contenedor($position)
+            
         }
     }   
     
     .contenedor {
         p {
-            position: absolute;
+            @include contenedor($position)
         }
     }
     
@@ -58,5 +64,10 @@ div {
         100% {
             opacity: 1;
         }
+    
+   
+
+
+
     }
     
