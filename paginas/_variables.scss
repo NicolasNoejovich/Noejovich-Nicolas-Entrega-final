@@ -1,0 +1,25 @@
+$fuentes: (
+    font-light:300,
+    font-regular: 400,
+    font-semibold: 500,
+    font-bold:700,
+);
+
+$principal: (blueviolet);
+$primary: $principal;
+
+@mixin fondo ($primary) {
+    background: $primary;        
+}
+
+
+@mixin color ($primary) {
+    color: $primary;
+}
+
+@mixin boton ($primary) {
+    background-color: $primary;
+}
+
+
+

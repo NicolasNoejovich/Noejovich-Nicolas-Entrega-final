@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap");
 body {
   font-family: Oxygen, sans-serif;
   font-weight: 400;
 }
 
 div .header__img {
-  max-height: 36rem !important;
+  max-height: 34rem !important;
 }
 
 #fondo {
@@ -47,15 +47,6 @@ div .prod_img {
   background: linear-gradient(#e66465, #9198e5);
 }
 
-.cardAN:hover {
-  transform: translate(0px, -20px);
-  transition: 0.3s ease all;
-}
-
-.card-title:hover {
-  color: #0d6efd;
-}
-
 .aa {
   -webkit-animation-name: aa;
           animation-name: aa;
@@ -82,27 +73,101 @@ div .prod_img {
     opacity: 1;
   }
 }
+.tiendaEventos {
+  font-weight: 500;
+}
+
+.card_cursos-pk {
+  background: pink;
+}
+
+.card_cursos-lb {
+  background: lightblue;
+}
+
+.card_cursos-vt {
+  background: #ddade6;
+}
+
+.card_cursos-gn {
+  background: #ade6c7;
+}
+
+#footer {
+  height: 5rem;
+  width: 100%;
+}
+
+.font-font-light {
+  font-weight: 300;
+}
+
+.font-font-regular {
+  font-weight: 400;
+}
+
+.font-font-semibold {
+  font-weight: 500;
+}
+
+.font-font-bold {
+  font-weight: 700;
+}
+
+.colorsite {
+  background: blueviolet;
+}
+
+.colortext {
+  color: blueviolet;
+}
+
+.botoncolor {
+  background-color: blueviolet !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .cardAN {
+    transition: 0.4s ease all;
+  }
+  .cardAN:hover {
+    transform: translate(0px, -20px);
+  }
+
+  .card-title {
+    transition: 0.3s ease all;
+  }
+  .card-title:hover {
+    color: blueviolet !important;
+  }
+
+  .foto-tienda {
+    transition: 0.4s ease all;
+  }
+  .foto-tienda:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .cursos_bs {
+    transition: 0.3s ease all;
+  }
+  .cursos_bs:hover {
+    box-shadow: 2px 2px 10px 10px blueviolet;
+    transform: scale(1.01);
+  }
+}
 @media screen and (min-width: 760px) {
   .section-img {
     width: 25%;
   }
 }
-@media screen and (max-width: 576px) {
-  .section-info div {
-    max-width: 100%;
-    max-height: 36rem !important;
-  }
-
+@media screen and (min-width: 576px) {
   .section-img {
     width: 100%;
   }
 
   #footer {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
   }
-
-
-
-  
 }/*# sourceMappingURL=estilos.css.map */

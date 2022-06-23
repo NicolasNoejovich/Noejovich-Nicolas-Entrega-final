@@ -1,0 +1,20 @@
+@mixin cursos ($fondo) {
+    background: $fondo;        
+}
+
+.card_cursos-pk{
+    @include cursos(pink);
+}
+
+.card_cursos-lb{
+    @include cursos(lightblue);
+}
+
+.card_cursos-vt{
+    @include cursos(#ddade6);
+}
+
+.card_cursos-gn{
+    @include cursos(#ade6c7);
+}
+

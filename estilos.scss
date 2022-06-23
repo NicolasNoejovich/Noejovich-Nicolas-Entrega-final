@@ -1,11 +1,14 @@
 $colorh3: white;
 $color-card-title:#0d6efd;
-@import "tienda";
-@import "contact";
-@import "fuentes";
-@import "index";
-@import "products";
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+@import "./paginas/variables";
+@import "./paginas/fuentes";
+@import "./paginas/index";
+@import "./paginas/products";
+@import "./paginas/tienda";
+@import "./paginas/cursos";
+@import "./paginas/contact";
+
 
 
 @each $k, $v in $fuentes {
@@ -16,19 +19,71 @@ $color-card-title:#0d6efd;
 }
 
 
-@mixin width-general  ($width) {
+.colorsite{
+    @include fondo ($primary);
+}
+
+.colortext{
+    @include color($primary);
+}
+
+
+.botoncolor{
+    @include boton (blueviolet!important);
+}
+
+@mixin width-general {
 	width: 25%;
 }
 
-@mixin width-general-full  ($width) {
+@mixin width_general-full  {
 	width: 100%;
+}
+
+
+
+@media screen and (min-width: 1200px){
+	.cardAN{
+    
+        &:hover { 
+            transform: translate(0px, -20px);
+            
+        }
+
+        transition: .4s ease all; 
+    }
+	.card-title{
+    
+        &:hover {
+            color: $primary !important;
+            
+            
+        }
+        transition: .3s ease all; 
+    }
+
+	.foto-tienda{
+		&:hover{
+			transform: scale(1.1,1.1);
+		   
+		}
+		transition: .4s ease all; ;
+	}
+	
+	.cursos_bs {
+		
+		&:hover{
+			box-shadow: 2px 2px 10px 10px $primary;
+			transform: scale(1.01)
+		}
+		transition: .3s ease all; 
+	}
 }
 
 @media screen and (min-width:760px ) {
 
 .section-img{
-@include width-general($width)	;
-
+@include width-general;
 }
 
 
@@ -36,35 +91,19 @@ $color-card-title:#0d6efd;
 
 @media screen and (min-width:576px ) {
 
-.section-info div {
-	max-width: 100%;
-	max-height: 36rem !important;
-
-
-
-}
 
 .section-img{
-	@include width-general-full($width)	;
-	
-	
-
+	@include width-general-full	;
 }
 
 
 #footer{
-	@include width-general-full($width);
-	height: 10rem;
+	@include width_general-full;
+	height: 6rem;
 	
 	
 }
 
-.foto-tienda{
-	&:hover{
-		border: solid green 10px	;
-	}
-}
 
 
 }
-

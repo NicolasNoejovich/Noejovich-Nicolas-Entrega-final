@@ -12,20 +12,20 @@ div {
     
 
     @mixin contenedor ($position) {
-        position: absolute;        
+        position: $position;        
     }
 
     .contenedor{
     
         h2 {
-            @include contenedor($position)
+            @include contenedor (absolute);
             
         }
     }   
     
     .contenedor {
         p {
-            @include contenedor($position)
+            @include contenedor (absolute);
         }
     }
     
@@ -33,27 +33,11 @@ div {
         background: linear-gradient(#e66465, #9198e5); 
     }
     
-    
-    .cardAN{
-    
-        &:hover { 
-            transform: translate(0px, -20px);
-            transition: .3s ease all; 
-        }
-    }
-    
-    .card-title{
-    
-        &:hover {
-            color: $color-card-title;
-        }
-    }
-    
-    
     .aa{
         animation-name: aa;
         animation-duration: 3s;
         animation-iteration-count: 1;
+        
     }
     
     @keyframes aa{
