@@ -160,8 +160,12 @@ div .prod_img {
   .section-img {
     width: 25%;
   }
+
+  .video-tienda {
+    width: 100%;
+  }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 759px) {
   .section-img {
     width: 100%;
   }
@@ -169,5 +173,9 @@ div .prod_img {
   #footer {
     width: 100%;
     height: 6rem;
+  }
+
+  .video-tienda {
+    width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */
